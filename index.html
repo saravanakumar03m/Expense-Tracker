@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        Expense Tracker
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="topbar">
+                <p>Your Current Balance</p>
+                <p class="amount-holder">
+                    <p id="currency"></p>
+                    <p id="balance"></p>
+                </p>
+            </div>
+        </div>
+        <div class="form">
+            <p>Add new transaction</p>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="radio">
+                <label for="name">Type</label>
+                <div>
+                    <input type="radio" name="type" id="income">
+                    <label for="radio">Income</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" id="expense">
+                    <label for="radio">Expense</label>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount</label>
+                <input type="number" name="amount" id="amount">
+            </div>
+            <button class="btn" id="save">Add Transaction</button>
+            <button class="btn" id="cancel">Cancel edit</button>
+        </div>
+        <p class="heading">Your Transactions</p>
+        <ul id="listoftransactions">
+            <li class="transaction income">
+                <p></p>
+                <div class="right">
+                    <p></p>
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </li>
+            <li class="transaction expense">
+                <p></p>
+                <div class="right">
+                    <p></p>
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">copyright</div>
+    <script src="./app.js"></script>
+</body>
+</html>
